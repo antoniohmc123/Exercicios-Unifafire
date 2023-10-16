@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Cynthia Oliveira, Antonio Henrique e Felipe Castelo">
+
+<title>Relatório de Decisões Estratégicas Vendas</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Projeto_ML2View_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Projeto_ML2View_files/libs/quarto-html/quarto.js"></script>
+<script src="Projeto_ML2View_files/libs/quarto-html/popper.min.js"></script>
+<script src="Projeto_ML2View_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Projeto_ML2View_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Projeto_ML2View_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Projeto_ML2View_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Projeto_ML2View_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Projeto_ML2View_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Projeto_ML2View_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Relatório de Decisões Estratégicas Vendas</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Cynthia Oliveira, Antonio Henrique e Felipe Castelo </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="nossa-jornada" class="level2">
+<h2 class="anchored" data-anchor-id="nossa-jornada">Nossa Jornada</h2>
+<p>Este relatório tem como objetivo fornecer uma análise detalhada dos dados disponíveis e oferecer insights valiosos que podem embasar decisões estratégicas importantes. A base de dados em questão possui um total de 20 variáveis que cobrem diversos aspectos relevantes para a nossa análise.</p>
+</section>
+<section id="nossos-desafios" class="level2">
+<h2 class="anchored" data-anchor-id="nossos-desafios">Nossos desafios:</h2>
+<p>A empresa enfrenta desafios significativos no atual cenário de mercado e precisa tomar decisões informadas para garantir o seu sucesso. Compreender profundamente os dados disponíveis é fundamental para a tomada de decisões eficazes.</p>
+</section>
+<section id="nossos-dados" class="level2">
+<h2 class="anchored" data-anchor-id="nossos-dados">Nossos dados:</h2>
+<p>A análise gráfica é uma ferramenta poderosa para compreender os dados. Neste relatório, apresentamos uma série de gráficos que abrangem diversas dimensões das variáveis disponíveis. Os gráficos a seguir foram desenvolvidos com o objetivo de explorar diferentes aspectos dos dados e identificar tendências, padrões e insights relevantes:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>       ID        Ano Nascimento Salario Anual    Filhos em Casa  
+ Min.   :    0   Min.   :1893   Min.   :  1730   Min.   :0.0000  
+ 1st Qu.: 2815   1st Qu.:1959   1st Qu.: 35196   1st Qu.:0.0000  
+ Median : 5492   Median :1970   Median : 51766   Median :0.0000  
+ Mean   : 5617   Mean   :1969   Mean   : 52291   Mean   :0.4475  
+ 3rd Qu.: 8495   3rd Qu.:1977   3rd Qu.: 68281   3rd Qu.:1.0000  
+ Max.   :11191   Max.   :1996   Max.   :666666   Max.   :2.0000  
+                                NA's   :19                       
+ Adolescentes em Casa Dias Desde Ultima Compra Gasto com Eletronicos
+ Min.   :0.000        Min.   : 0.00            Min.   :   0.0       
+ 1st Qu.:0.000        1st Qu.:22.00            1st Qu.:  23.0       
+ Median :0.000        Median :45.00            Median : 175.5       
+ Mean   :0.503        Mean   :43.73            Mean   : 303.9       
+ 3rd Qu.:1.000        3rd Qu.:66.00            3rd Qu.: 503.2       
+ Max.   :2.000        Max.   :88.00            Max.   :1493.0       
+                                                                    
+ Gasto com Brinquedos Gasto com Moveis Gasto com Utilidades Gasto com Alimentos
+ Min.   :  0.00       Min.   :   0.0   Min.   :  0.00       Min.   :  0.00     
+ 1st Qu.:  1.00       1st Qu.:  16.0   1st Qu.:  3.00       1st Qu.:  1.00     
+ Median :  8.00       Median :  67.0   Median : 12.00       Median :  8.00     
+ Mean   : 26.32       Mean   : 164.1   Mean   : 37.59       Mean   : 26.83     
+ 3rd Qu.: 32.00       3rd Qu.: 226.0   3rd Qu.: 50.00       3rd Qu.: 33.00     
+ Max.   :199.00       Max.   :1725.0   Max.   :259.00       Max.   :263.00     
+                                                                               
+ Gasto com Vestuario Numero de Compras com Desconto Numero de Compras na Web
+ Min.   :  0.00      Min.   : 0.000                 Min.   : 0.000          
+ 1st Qu.:  9.00      1st Qu.: 1.000                 1st Qu.: 2.000          
+ Median : 24.00      Median : 2.000                 Median : 4.000          
+ Mean   : 43.63      Mean   : 2.333                 Mean   : 4.075          
+ 3rd Qu.: 55.00      3rd Qu.: 3.000                 3rd Qu.: 6.000          
+ Max.   :362.00      Max.   :15.000                 Max.   :27.000          
+                                                                            
+ Numero de Compras via Catalogo Numero de Compras na Loja
+ Min.   : 0.000                 Min.   : 0.000           
+ 1st Qu.: 0.000                 1st Qu.: 3.000           
+ Median : 2.000                 Median : 5.000           
+ Mean   : 2.635                 Mean   : 5.798           
+ 3rd Qu.: 4.000                 3rd Qu.: 8.000           
+ Max.   :28.000                 Max.   :13.000           
+                                                         
+ Numero Visitas WebSite Mes
+ Min.   : 0.000            
+ 1st Qu.: 3.000            
+ Median : 6.000            
+ Mean   : 5.327            
+ 3rd Qu.: 7.000            
+ Max.   :20.000            
+                           </code></pre>
+</div>
+</div>
+</section>
+<section id="gráfico-1-distribuição-da-escolaridade-dos-clientes" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-1-distribuição-da-escolaridade-dos-clientes"><strong>Gráfico 1: Distribuição da Escolaridade dos Clientes</strong></h2>
+<p>Este gráfico mostra a distribuição dos níveis de escolaridade dos clientes. Ele nos ajuda a entender a composição educacional da nossa base de clientes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-2-distribuição-do-estado-civil-dos-clientes" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-2-distribuição-do-estado-civil-dos-clientes"><strong>Gráfico 2: Distribuição do Estado Civil dos Clientes</strong></h2>
+<p>Neste gráfico, examinamos a distribuição do estado civil dos clientes. Ele nos permite identificar o estado civil predominante entre os clientes.</p>
+<div class="cell" data-warning="false">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-3-distribuição-de-gasto-com-alimentos-dos-clientes" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-3-distribuição-de-gasto-com-alimentos-dos-clientes"><strong>Gráfico 3: Distribuição de Gasto com Alimentos dos Clientes</strong></h2>
+<p>Este gráfico revela a distribuição de alimentos dos clientes. Ele nos ajuda a compreender o comportamento e sua frequência</p>
+<div class="cell" data-warning="false">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-4-distribuição-de-salário-anual" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-4-distribuição-de-salário-anual"><strong>Gráfico 4: Distribuição de Salário Anual</strong></h2>
+<p>Este gráfico revela a distribuição de salário anual do clientes. Ele nos ajuda a compreender o comportamento e sua frequência</p>
+<div class="cell" data-warning="false">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 19 rows containing non-finite values (`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-5-dispersão-entre-salário-anual-e-gastos-eletrónicos" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-5-dispersão-entre-salário-anual-e-gastos-eletrónicos"><strong>Gráfico 5: Dispersão entre salário anual e gastos eletrónicos</strong></h2>
+<p>Este gráfico revela a distribuição de dispersão entre salario anual x gastos eletronicos.</p>
+<div class="cell" data-warning="false">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 19 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-6-dispersão-entre-número-de-compras-na-web-x-compras-na-lojas" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-6-dispersão-entre-número-de-compras-na-web-x-compras-na-lojas"><strong>Gráfico 6: Dispersão entre número de compras na web x compras na lojas</strong></h2>
+<p>Este gráfico compreender o número de compras por categoria</p>
+<div class="cell" data-warning="false">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-7-distribuição-de-compras-por-país-e-estado-civil" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-7-distribuição-de-compras-por-país-e-estado-civil"><strong>Gráfico 7: Distribuição de Compras por País e Estado Civil</strong></h2>
+<p>Este gráfico de barras empilhadas compara o número de compras por país, segmentado pelo estado civil dos clientes. Ele nos ajuda a entender como as preferências de compra variam entre diferentes grupos de clientes.</p>
+<div class="cell" data-warning="false">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-8-distribuição-de-dias-desde-ultimas-compras" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-8-distribuição-de-dias-desde-ultimas-compras"><strong>Gráfico 8: Distribuição de dias desde ultimas compras</strong></h2>
+<p>Este gráfico traz o recorte das ultimas compras dos clientes</p>
+<div class="cell" data-warning="false">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-9-correlação-para-variavéis-númericas" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-9-correlação-para-variavéis-númericas"><strong>Gráfico 9: Correlação para variavéis númericas</strong></h2>
+<p>Este gráfico apresenta uma matriz de correlação que mede o relacionamento entre diferentes variáveis numéricas em nossos dados. A matriz de correlação ajuda a identificar se existe alguma relação linear entre essas variáveis, indicando se elas tendem a aumentar ou diminuir juntas. Isso é útil para entender como as variáveis estão interconectadas e quais podem ter um impacto mais significativo em nosso conjunto de dados.</p>
+<div class="cell" data-warning="false">
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="gráfico-10-regra-de-associação-com-tecnica-de-aprendizado-de-máquina" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-10-regra-de-associação-com-tecnica-de-aprendizado-de-máquina"><strong>Gráfico 10: Regra de associação com tecnica de aprendizado de máquina</strong></h2>
+<p>Este gráfico apresenta as regras de associação, isso significa que ele mostra os itens ou conjuntos de itens como nós interligados por arestas. As conexões entre os nós representam as regras de associação. Os nós mais centrais indicam itens mais frequentemente associados a outros.</p>
+<div class="cell" data-warning="false">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Unknown control parameters: type</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Available control parameters (with default values):
+layout   =  stress
+circular     =  FALSE
+ggraphdots   =  NULL
+edges    =  &lt;environment&gt;
+nodes    =  &lt;environment&gt;
+nodetext     =  &lt;environment&gt;
+colors   =  c("#EE0000FF", "#EEEEEEFF")
+engine   =  ggplot2
+max  =  100
+verbose  =  FALSE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Too many rules supplied. Only plotting the best 100 using 'lift'
+(change control parameter max if needed).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Projeto_ML2View_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão:</h2>
+<p>A análise exploratória de dados e visualização gráfica realizada neste relatório oferece uma visão detalhada das variáveis disponíveis. Os gráficos apresentados fornecem informações valiosas sobre diferentes aspectos do conjunto de dados, permitindo uma compreensão mais profunda de tendências e padrões.</p>
+<p>Com base nessa análise, a empresa estará mais bem preparada para tomar decisões estratégicas informadas que podem impactar positivamente o seu desempenho e direção futura.</p>
+</section>
+<section id="chegamos-ao-fim" class="level2">
+<h2 class="anchored" data-anchor-id="chegamos-ao-fim">Chegamos ao fim!</h2>
+<p>Agradecemos pela companhia nesta viagem de descobertas. Estamos ansiosos para o próximo relatório, onde continuaremos a desbravar os mistérios dos dados e encontrar novos tesouros.</p>
+<p>Até a próxima parada! :)</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
